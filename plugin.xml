@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="my-background-mode-plugin"
+        version="1.0.0">
+    <name>BackgroundMode</name>
+    <description>Custom Background Mode Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, background, mode</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <platform name="android">
+        <source-file src="src/android/BackgroundMode.java" target-dir="src/com/example/backgroundmode" />
+    </platform>
+
+    <platform name="ios">
+        <source-file src="src/ios/BackgroundMode.m" framework="true" />
+    </platform>
+</plugin>
