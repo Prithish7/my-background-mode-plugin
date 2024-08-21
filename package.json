@@ -1,0 +1,13 @@
+{
+    "name": "my-background-mode-plugin",
+    "version": "1.0.0",
+    "description": "Custom Background Mode Plugin",
+    "cordova": {
+      "id": "my-background-mode-plugin",
+      "platforms": {
+        "android": {},
+        "ios": {}
+      }
+    }
+  }
+  
