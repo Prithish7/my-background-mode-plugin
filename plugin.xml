@@ -1,20 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="my-background-mode-plugin"
-        version="1.0.0">
-    <name>BackgroundMode</name>
-    <description>Custom Background Mode Plugin</description>
+<plugin id="my-background-mode-plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>MyBackgroundModePlugin</name>
+    <description>A custom plugin to manage background mode in Ionic v4.</description>
     <license>Apache 2.0</license>
-    <keywords>cordova, background, mode</keywords>
+    <keywords>cordova, background, plugin</keywords>
     <engines>
-        <engine name="cordova" version=">=3.0.0" />
+        <engine name="cordova" version=">=8.0.0" />
     </engines>
-
     <platform name="android">
-        <source-file src="src/android/BackgroundMode.java" target-dir="src/com/example/backgroundmode" />
+        <source-file src="src/android/MyBackgroundModePlugin.java" target-dir="src/com/mybackgroundmodeplugin" />
     </platform>
-
     <platform name="ios">
-        <source-file src="src/ios/BackgroundMode.m" framework="true" />
+        <source-file src="src/ios/MyBackgroundModePlugin.m" />
     </platform>
+    <js-module src="www/MyBackgroundModePlugin.js" name="MyBackgroundModePlugin">
+        <clobbers target="MyBackgroundModePlugin" />
+    </js-module>
 </plugin>
